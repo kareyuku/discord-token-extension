@@ -1,0 +1,20 @@
+{
+    "name": "Discord Login",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Simple Discord Login script with GUI made by Bartuś (Luc1fer)",
+    "author": "Bartuś",
+    "icons": {
+        "128": "discord.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["skrypt.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "gui.html",
+        "default_title": "Discord Login"
+    }
+}
